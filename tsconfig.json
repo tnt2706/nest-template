@@ -1,0 +1,31 @@
+{
+   "compilerOptions": {
+     "module": "commonjs",
+     "declaration": true,
+     "removeComments": true,
+     "emitDecoratorMetadata": true,
+     "experimentalDecorators": true,
+     "target": "es2017",
+     "sourceMap": true,
+     "outDir": "./dist",
+     "baseUrl": "./",
+     "moduleResolution": "node",       
+     "resolveJsonModule": true,
+     "paths": {
+         "~/*": [
+             "src/*"
+         ],
+         "@modules/*": ["src/modules/*"],
+         "@base/*": ["src/modules/base/*"],
+         "@api/*": ["src/modules/api/*"],
+         "@web/*": ["src/modules/web/*"],
+         "*": [
+             "./node_modules/*"
+         ]
+     },    
+     "incremental": true
+   },
+   "include": ["src"],
+   "exclude": ["node_modules", "dist"]
+ }
+ 
